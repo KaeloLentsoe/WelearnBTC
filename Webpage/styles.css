@@ -1,0 +1,80 @@
+/* Reset default margin and padding for all elements */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-colour
+}
+
+/* Container that holds everything in the center */
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Logo styling */
+.logo img {
+    width: 250%;
+    max-width: 200px;
+    display: block;
+    margin: 40px auto 20px;
+    min-width: 100px;
+}
+
+/* Custom search input styling */
+.gcse-search input {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    height: 44px;
+    width: 100%;
+    max-width: 560px;
+    padding-left: 16px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for the search input */
+.gcse-search input:focus {
+    outline: none;
+    border-color: #4285f4;
+}
+
+/* Button group container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* Styling for buttons */
+button {
+    box-sizing: border-box;
+    padding: 0 16px;
+    font-size: 14px;
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #c3b7da;
+    border-color: #ee9d08;
+}
+
+/* Active button effect */
+button:active {
+    background-color: #e2e2e2;
+}

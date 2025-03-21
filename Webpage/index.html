@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>WeLearn₿TC</title>
+    <!-- Google Custom Search Engine Script -->
+    <script async src="https://cse.google.com/cse.js?cx=03edfe9a66600442d"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/Webpage/Image/2.png" alt="Logo">
+        </div>
+        
+        <!-- Google Custom Search Engine Box -->
+        <div class="gcse-search"></div>
+        
+        <div class="buttons">
+    
+            <button onclick="orangePill()">Orange Pill me</button>
+        </div>
+    </div>
+
+    <script>
+        function btcSearch() {
+            const searchTerm = document.querySelector(".gcse-search input").value;
+            if (searchTerm) {
+                window.location.href = `https://www.google.com/search?q=${searchTerm}+bitcoin`;
+            }
+        }
+
+        function orangePill() {
+            window.location.href = "https://www.youtube.com/@WeLearnBTC/results?search_query=orange+pill";
+        }
+    </script>
+</body>
+</html>
