@@ -79,7 +79,7 @@ button:active {
     background-color: #e2e2e2;
 }
 footer {
-    background-color: #9a24a5;
+    background-color:#D5006E ;
     color: #fff;
     width: 100%;
     padding: 20px 0;
@@ -105,3 +105,16 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+aside {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-size: 0.990rem;
+    font-weight: bold;
+    color: #D5006E;
+}
+
+aside:hover {
+    color: #fde400;
+
