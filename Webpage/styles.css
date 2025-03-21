@@ -1,88 +1,101 @@
 /* Reset default margin and padding for all elements */
-body, html {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Fullscreen container to center the content */
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #ffffff;
- 
-/* Container that holds everything in the center */
+    background-image: #f2f2f2;
+    background-image: url('https://images3.alphacoders.com/102/1020783.jpg'); /* Add background image */
+    background-size: cover; /* Make the background image cover the entire page */
+    background-position: center; /* Center the background image */
+}
+
+/* Central container for content */
 .container {
     text-align: center;
-    max-width: 600px;
-    width: 100%;
-}
-
-/* Logo styling */
-.logo img {
-    width: 250%;
-    max-width: 200px;
-    display: block;
-    margin: 40px auto 20px;
-    min-width: 100px;
-}
-
-/* Custom search input styling */
-.gcse-search input {
+    width: 200%;
+    max-width: 1000px;
+    padding: 20px;
     box-sizing: border-box;
-    display: inline-block;
-    border-radius: 24px;
-    border: 1px solid #ffae00;
-    height: 44px;
-    width: 100%;
-    max-width: 560px;
-    padding-left: 16px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s;
 }
 
-/* Focus effect for the search input */
+/* Google Logo Styling */
+.logo img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Custom Search Box Styling */
+.gcse-search {
+    margin-top: 20px;
+}
+
+/* Styling the Google Custom Search Box input */
+.gcse-search input {
+    width: 200%;
+    max-width: 584px;
+    padding: 14px 20px;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    color: #5f6368;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+/* Focus Effect for Search Input */
 .gcse-search input:focus {
     outline: none;
-    border-color: #fab700;
-
+    border-color: #4285f4;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24), 0 0 10px rgba(66, 133, 244, 0.5);
 }
-footer {
-    background-color:#D5006E ;
-    color: #fff;
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+/* Button container for Google Search and I'm Feeling Lucky buttons */
+.buttons {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Styling for Google Search and I'm Feeling Lucky buttons */
+button {
+    padding: 10px 24px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effects for buttons */
+button:hover {
+    background-color: #e8e8e8;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
-
-footer a {
-    color: #f8f9fa;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-aside {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(90deg);
-    font-size: 0.990rem;
-    font-weight: bold;
-    color: #D5006E;
-}
-
-aside:hover {
-    color: #c3b7da;
-

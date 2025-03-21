@@ -4,42 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
     <link rel="stylesheet" href="styles.css">
-    <title>WeLearn₿TC</title>
+    <!-- Google Custom Search Engine Script -->
     <script async src="https://cse.google.com/cse.js?cx=03edfe9a66600442d"></script>
 </head>
 
 <body>
     <div class="container">
+        <!-- Google Logo -->
         <div class="logo">
-            <img src="/Webpage/Image/2.png" alt="Logo">
+            <img src="Image/pull.png" alt="Google Logo">
         </div>
-        
-        <!-- Google Custom Search Engine Box -->
+
+        <!-- Google Custom Search Engine -->
         <div class="gcse-search"></div>
-        
-        
-        <aside>
-            <a href="Resourses.html">RESOURCES</a>
-        </aside>
+
+        <!-- Search Buttons -->
+        <div class="buttons">   
+            <button class="lucky-btn" onclick="WeLearnBTC()">WeLearn₿TC</button>
+            <button class="search-btn" onclick="OrangePill()">Orange Pill</button>
+         
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2025 WeLearn₿TC. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2025 WeLearn₿TC. All rights reserved.</p>
         <p>Made by Blockspace Tech Solutions</p>
+        </div>
     </footer>
-
     <script>
-        function btcSearch() {
-            const searchTerm = document.querySelector(".gcse-search input").value;
-            if (searchTerm) {
-                window.location.href = `https://www.google.com/search?q=${searchTerm}+bitcoin`;
-            }
-        }
-
-        function orangePill() {
+         function OrangePill() {
             window.location.href = "https://www.youtube.com/@WeLearnBTC/results?search_query=orange+pill";
         }
+
+        function WeLearnBTC() {
+            window.location.href = "https://welearnbtc.com";
+        }
+        
     </script>
 </body>
 
