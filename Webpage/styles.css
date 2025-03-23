@@ -73,8 +73,8 @@ body, html {
 button {
     padding: 10px 24px;
     font-size: 14px;
-    background-color: #f8f8f8;
-    border: 1px solid #dcdcdc;
+    background-color: orange;
+    border: 1px solid purple;
     border-radius: 24px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
@@ -82,7 +82,7 @@ button {
 
 /* Hover effects for buttons */
 button:hover {
-    background-color: #e8e8e8;
+    background-color: orange;
     transform: scale(1.05);
 }
 

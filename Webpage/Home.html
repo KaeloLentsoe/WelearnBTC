@@ -3,15 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Home</title>
+    <title>Under Construction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Stack the elements vertically */
+            height: 100vh;
+            background-color: #f4f4f4;
+            background-image: url('/Webpage/Image/cyberpunk-bitcoin-illustration_23-2151611165.jpg');
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FF5733; /* Bright color for construction feel */
+            white-space: nowrap;
+            animation: slideRight 4s linear infinite; /* Slide animation with infinite loop */
+        }
+
+        /* Keyframes for sliding right */
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%); /* Start from left outside the screen */
+            }
+            50% {
+                transform: translateX(50%); /* Move to the right side */
+            }
+            100% {
+                transform: translateX(100%); /* End at right outside the screen */
+            }
+        }
+
+        /* Style for the Back to Search link */
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ffffff; /* Blue color for clickable text */
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        h2:hover {
+            color: #2980b9; /* Darker blue on hover */
+        }
+
+        footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 10px 0;
+}
+    </style>
 </head>
 <body>
 
+    <!-- The animated <h1> text -->
+    <h1>UNDER-CONSTRUCTION</h1>
+
+    <!-- Clickable Back to Search option -->
+    <h2 onclick="goBack()">Back to search</h2>
+
     <footer>
-        <p>&copy; 2025 WeLearn₿TC. All rights reserved.</p>
-        <p>Made by Blockspace tech solutions</p>
+        <div class="footer-content">
+            <p>&copy; 2025 WeLearn₿TC. All rights reserved.</p>
+        <p>Made by Blockspace Tech Solutions</p>
+        </div>
     </footer>
-    
+
+    <script>
+        // Function to redirect the user to the search page
+        function goBack() {
+            window.location.href = "index.html";  // Change this URL to the page you want
+        }
+    </script>
+
 </body>
 </html>
